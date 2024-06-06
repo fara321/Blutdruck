@@ -1,1 +1,33 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blutdruck App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Blutdruck App</h1>
+  <form id="bloodPressureForm">
+    <label for="systolic">Systolischer Wert:</label>
+    <input type="number" id="systolic" name="systolic" size="4" required>
+    
+    <label for="diastolic">Diastolischer Wert:</label>
+    <input type="number" id="diastolic" name="diastolic" size="4" required>
+    
+    <label for="date">Datum:</label>
+    <input type="date" id="date" name="date" required>
+    s
+    <button type="submit">Speichern</button>
+  </form>
+  
+  <h2>Gespeicherte Werte</h2>
+  <ul id="bloodPressureList"></ul>
+  
+  <button id="downloadBtn">Daten als JSON herunterladen</button>
+  <input type="file" id="uploadInput" style="display:none">
+  <button id="uploadBtn">Daten hochladen</button>
+  
+  <script src="app.js"></script>
+</body>
+</html>
