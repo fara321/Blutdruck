@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let bloodPressures = JSON.parse(localStorage.getItem('bloodPressures')) || [];
       bloodPressures.forEach(bp => {
         const li = document.createElement('li');
-        li.textContent = `Datum: ${bp.date}, Systolisch: ${bp.systolic}, Diastolisch: ${bp.diastolic}`;
+        li.textContent = `${bp.date}, Sys: ${bp.systolic}, Dia: ${bp.diastolic}`;
         bloodPressureList.appendChild(li);
       });
     }
